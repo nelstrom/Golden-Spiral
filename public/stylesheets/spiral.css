@@ -1,0 +1,34 @@
+body {
+  background-color: white;
+  box-pack: center; }
+
+#container {
+  width: 890px;
+  height: 550.05px;
+  background-color: #eeeeee; }
+
+.north, .east, .south, .west {
+  display: box; }
+
+#container div {
+  background-color: #eeeeee;
+  height: 100%;
+  width: 10%; }
+  #container div div {
+    background-color: #dddddd; }
+    #container div div div {
+      background-color: #cccccc; }
+      #container div div div div {
+        background-color: #bbbbbb; }
+        #container div div div div div {
+          background-color: #aaaaaa; }
+          #container div div div div div div {
+            background-color: #999999; }
+            #container div div div div div div div {
+              background-color: #888888; }
+              #container div div div div div div div div {
+                background-color: #777777; }
+                #container div div div div div div div div div {
+                  background-color: #666666; }
+                  #container div div div div div div div div div div {
+                    background-color: #555555; }
