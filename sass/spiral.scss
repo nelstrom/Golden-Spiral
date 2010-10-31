@@ -10,6 +10,7 @@ $ratio: 1.6180339887;
 $gold: #ffe6ba;
 $grey: #eeeeee;
 $base-color: $grey;
+$gradient-increment: 6%;
 
 $factor: 20;
 $one:   (1 * $factor)+px;
@@ -27,10 +28,10 @@ body {
   @include display-box;
   @include box-pack(center);
 }
-.west { border-top-left-radius: 10000px; }
-.east { border-bottom-right-radius: 10000px; }
-.south { border-top-right-radius: 10000px; }
-.north { border-bottom-left-radius: 10000px; }
+.west { @include top-left-bevel; }
+.east { @include bottom-right-bevel; }
+.south { @include top-right-bevel; }
+.north { @include bottom-left-bevel; }
 
 #container div {
   background-color: $base-color;
@@ -43,42 +44,42 @@ body {
   div {
     width: $seven;
     height: $eight;
-    background-color: darken($base-color, 5%);
+    background-color: darken($base-color, (1*$gradient-increment));
     @include dock-top;
     div {
       width: $seven;
       height: $six;
-      background-color: darken($base-color, 10%);
+      background-color: darken($base-color, (2*$gradient-increment));
       @include dock-left;
       div {
         width: $five;
         height: $six;
-        background-color: darken($base-color, 15%);
+        background-color: darken($base-color, (3*$gradient-increment));
         @include dock-bottom;
         div {
           width: $five;
           height: $four;
-          background-color: darken($base-color, 20%);
+          background-color: darken($base-color, (4*$gradient-increment));
           @include dock-right;
           div {
             width: $three;
             height: $four;
-            background-color: darken($base-color, 25%);
+            background-color: darken($base-color, (5*$gradient-increment));
             @include dock-top;
             div {
               width: $three;
               height: $two;
-              background-color: darken($base-color, 30%);
+              background-color: darken($base-color, (6*$gradient-increment));
               @include dock-left;
               div {
                 width: $one;
                 height: $two;
-                background-color: darken($base-color, 35%);
+                background-color: darken($base-color, (7*$gradient-increment));
                 @include dock-bottom;
                 div {
                   width: $one;
                   height: $one;
-                  background-color: darken($base-color, 40%);
+                  background-color: darken($base-color, (8*$gradient-increment));
                 }
               }
             }
