@@ -19,10 +19,12 @@ body {
 .north {
   border-bottom-left-radius: 10000px; }
 
+#container div {
+  background-color: #eeeeee; }
+
 #container {
-  width: 990px;
-  height: 612px;
-  background-color: #eee;
+  width: 1100px;
+  height: 680px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -31,11 +33,12 @@ body {
   box-orient: horizontal;
   -webkit-box-pack: end;
   -moz-box-pack: end;
-  box-pack: end; }
+  box-pack: end;
+  background-color: #eeeeee; }
   #container div {
-    width: 378px;
-    height: 612px;
-    background-color: #ddd;
+    width: 420px;
+    height: 680px;
+    background-color: #e1e1e1;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -46,9 +49,9 @@ body {
     -moz-box-pack: start;
     box-pack: start; }
     #container div div {
-      width: 378px;
-      height: 234px;
-      background-color: #ccc;
+      width: 420px;
+      height: 260px;
+      background-color: #d4d4d4;
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -59,9 +62,9 @@ body {
       -moz-box-pack: start;
       box-pack: start; }
       #container div div div {
-        width: 144px;
-        height: 234px;
-        background-color: #bbb;
+        width: 160px;
+        height: 260px;
+        background-color: #c8c8c8;
         display: -webkit-box;
         display: -moz-box;
         display: box;
@@ -72,9 +75,9 @@ body {
         -moz-box-pack: end;
         box-pack: end; }
         #container div div div div {
-          width: 144px;
-          height: 90px;
-          background-color: #aaa;
+          width: 160px;
+          height: 100px;
+          background-color: #bbbbbb;
           display: -webkit-box;
           display: -moz-box;
           display: box;
@@ -85,9 +88,9 @@ body {
           -moz-box-pack: end;
           box-pack: end; }
           #container div div div div div {
-            width: 54px;
-            height: 90px;
-            background-color: #999;
+            width: 60px;
+            height: 100px;
+            background-color: #aeaeae;
             display: -webkit-box;
             display: -moz-box;
             display: box;
@@ -98,9 +101,9 @@ body {
             -moz-box-pack: start;
             box-pack: start; }
             #container div div div div div div {
-              width: 54px;
-              height: 36px;
-              background-color: #888;
+              width: 60px;
+              height: 40px;
+              background-color: #a2a2a2;
               display: -webkit-box;
               display: -moz-box;
               display: box;
@@ -111,9 +114,9 @@ body {
               -moz-box-pack: start;
               box-pack: start; }
               #container div div div div div div div {
-                width: 18px;
-                height: 36px;
-                background-color: #777;
+                width: 20px;
+                height: 40px;
+                background-color: #959595;
                 display: -webkit-box;
                 display: -moz-box;
                 display: box;
@@ -124,6 +127,6 @@ body {
                 -moz-box-pack: end;
                 box-pack: end; }
                 #container div div div div div div div div {
-                  width: 18px;
-                  height: 18px;
-                  background-color: #666; }
+                  width: 20px;
+                  height: 20px;
+                  background-color: #888888; }

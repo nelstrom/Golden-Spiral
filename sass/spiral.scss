@@ -7,7 +7,11 @@
 $seed: 890px;
 $ratio: 1.6180339887;
 
-$factor: 18;
+$gold: #ffe6ba;
+$grey: #eeeeee;
+$base-color: $grey;
+
+$factor: 20;
 $one:   (1 * $factor)+px;
 $two:   (2 * $factor)+px;
 $three: (3 * $factor)+px;
@@ -28,50 +32,53 @@ body {
 .south { border-top-right-radius: 10000px; }
 .north { border-bottom-left-radius: 10000px; }
 
+#container div {
+  background-color: $base-color;
+}
 #container {
   width: $nine;
   height: $eight;
-  background-color: #eee;
   @include dock-right;
+  background-color: $base-color;
   div {
     width: $seven;
     height: $eight;
-    background-color: #ddd;
+    background-color: darken($base-color, 5%);
     @include dock-top;
     div {
       width: $seven;
       height: $six;
-      background-color: #ccc;
+      background-color: darken($base-color, 10%);
       @include dock-left;
       div {
         width: $five;
         height: $six;
-        background-color: #bbb;
+        background-color: darken($base-color, 15%);
         @include dock-bottom;
         div {
           width: $five;
           height: $four;
-          background-color: #aaa;
+          background-color: darken($base-color, 20%);
           @include dock-right;
           div {
             width: $three;
             height: $four;
-            background-color: #999;
+            background-color: darken($base-color, 25%);
             @include dock-top;
             div {
               width: $three;
               height: $two;
-              background-color: #888;
+              background-color: darken($base-color, 30%);
               @include dock-left;
               div {
                 width: $one;
                 height: $two;
-                background-color: #777;
+                background-color: darken($base-color, 35%);
                 @include dock-bottom;
                 div {
                   width: $one;
                   height: $one;
-                  background-color: #666;
+                  background-color: darken($base-color, 40%);
                 }
               }
             }
