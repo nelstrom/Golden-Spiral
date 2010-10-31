@@ -1,0 +1,25 @@
+@mixin display-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+@mixin box-align($alignment) {
+  -webkit-box-align: $alignment;
+  -moz-box-align: $alignment;
+  box-align: $alignment;
+}
+@mixin box-orient($orientation) {
+  -webkit-box-orient: $orientation;
+  -moz-box-orient: $orientation;
+  box-orient: $orientation;
+}
+@mixin box-flex($flex) {
+  -webkit-box-flex: $flex;
+  -moz-box-flex: $flex;
+  box-flex: $flex;
+}
+@mixin box-pack($pack) {
+  -webkit-box-pack: $pack;
+  -moz-box-pack: $pack;
+  box-pack: $pack;
+}

@@ -1,0 +1,36 @@
+// box-orient: vertical/horizontal - affects layout of children
+// box-pack:   start/center/end
+// box-align:  stretch/center
+
+@import "_mixins.scss";
+
+$seed: 890px;
+$ratio: 1.6180339887;
+
+$factor: 12;
+$one:   (1 * $factor)+px;
+$two:   (2 * $factor)+px;
+$three: (3 * $factor)+px;
+$four:  (5 * $factor)+px;
+$five:  (8 * $factor)+px;
+$six:   (13 * $factor)+px;
+$seven: (21 * $factor)+px;
+$eight: (34 * $factor)+px;
+$nine:  (55 * $factor)+px;
+
+body {
+  background-color: #FFF;
+  @include display-box;
+}
+
+#container {
+  width: $nine;
+  height: $eight;
+  background-color: #eee;
+  div {
+    width: $seven;
+    height: $eight;
+    background-color: #ddd;
+  }
+}
+
