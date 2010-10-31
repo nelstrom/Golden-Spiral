@@ -25,18 +25,22 @@
 }
 
 @mixin dock-left {
+  @include display-box;
   @include box-orient(horizontal);
   @include box-pack(start);
 }
 @mixin dock-right {
+  @include display-box;
   @include box-orient(horizontal);
   @include box-pack(end);
 }
 @mixin dock-top {
+  @include display-box;
   @include box-orient(vertical);
   @include box-pack(start);
 }
 @mixin dock-bottom {
+  @include display-box;
   @include box-orient(vertical);
   @include box-pack(end);
 }
