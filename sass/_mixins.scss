@@ -45,18 +45,18 @@
   @include box-pack(end);
 }
 @mixin top-left-bevel {
-  -moz-border-top-left-radius: 10000px;
+  -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px;
 }
 @mixin top-right-bevel {
-  -moz-border-top-right-radius: 10000px;
+  -moz-border-radius-topright: 10000px;
   border-top-right-radius: 10000px;
 }
 @mixin bottom-left-bevel {
-  -moz-border-bottom-left-radius: 10000px;
+  -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px;
 }
 @mixin bottom-right-bevel {
-  -moz-border-bottom-right-radius: 10000px;
+  -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px;
 }

@@ -8,19 +8,19 @@ body {
   box-pack: center; }
 
 .west {
-  -moz-border-top-left-radius: 10000px;
+  -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px; }
 
 .east {
-  -moz-border-bottom-right-radius: 10000px;
+  -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px; }
 
 .south {
-  -moz-border-top-right-radius: 10000px;
+  -moz-border-radius-topright: 10000px;
   border-top-right-radius: 10000px; }
 
 .north {
-  -moz-border-bottom-left-radius: 10000px;
+  -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px; }
 
 #container div {
