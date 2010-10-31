@@ -1,14 +1,16 @@
 body {
-  background-color: white;
-  box-pack: center; }
+  background-color: white; }
 
 #container {
   width: 890px;
   height: 550.05px;
-  background-color: #eeeeee; }
-
-.north, .east, .south, .west {
-  display: box; }
+  background-color: #eeeeee;
+  display: box;
+  box-align: stretch;
+  box-orient: vertical;
+  box-pack: center; }
+  #container div {
+    box-align: center; }
 
 #container div {
   background-color: #eeeeee;

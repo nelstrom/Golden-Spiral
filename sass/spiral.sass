@@ -1,26 +1,24 @@
+// box-orient: vertical/horizontal - affects layout of children
+// box-pack:   
+// box-align: 
+
 $seed = 890px
 $ratio = 1.6180339887
 
 body
   background-color: #FFF
-  box-pack: center
 
 #container
   width: $seed
   height: $seed / $ratio
   background-color: #eee
-
-
-.north, .east, .south, .west
   display: box
-.north
-.east
-.south
-.west
-  
-  
-  
-  
+  box-align: stretch
+  box-orient: vertical
+  box-pack: center
+  div
+    box-align: center
+
 #container
   div
     background-color: #eee

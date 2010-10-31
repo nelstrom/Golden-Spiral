@@ -1,0 +1,47 @@
+@mixin display-box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+}
+@mixin box-align($alignment) {
+  box-align: $alignment;
+  -webkit-box-align: $alignment;
+  -moz-box-align: $alignment;
+}
+@mixin box-orient($orientation) {
+  box-orient: $orientation;
+  -webkit-box-orient: $orientation;
+  -moz-box-orient: $orientation;
+}
+@mixin box-flex($flex) {
+  box-flex: $flex;
+  -webkit-box-flex: $flex;
+  -moz-box-flex: $flex;
+}
+@mixin box-pack($pack) {
+  box-pack: $pack;
+  -webkit-box-pack: $pack;
+  -moz-box-pack: $pack;
+}
+
+.container {
+  background-color: #DDD;
+  width: 300px;
+  height: 300px;
+  @include display-box;
+  @include box-align("center");
+  @include box-pack("center");
+  @include box-orient("vertical");
+  
+  div {
+    color: white;
+    @include display-box;
+    @include box-flex(1);
+  }
+  .child-one {
+    background-color: #cc3333;
+  }
+  .child-two {
+    background-color: #3333cc;
+  }
+}
