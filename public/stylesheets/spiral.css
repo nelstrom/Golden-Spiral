@@ -1,14 +1,84 @@
-body {
-  background-color: #FFF;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box; }
+/*
+Syntax error: Invalid CSS after "...ent(horizontal)": expected "}", was "@include box-pa..."
+        on line 29 of sass/_mixins.scss
+        from line 5 of sass/spiral.scss
 
-#container {
-  width: 660px;
-  height: 408px;
-  background-color: #eee; }
-  #container div {
-    width: 252px;
-    height: 408px;
-    background-color: #ddd; }
+24:   @include box-pack(center);
+25: }
+26: 
+27: #container {
+28:   width: $nine;
+29:   height: $eight;
+30:   background-color: #eee;
+31:   @include display-box;
+32:   @include box-pack(end);
+33:   div {
+34:     width: $seven;
+
+Backtrace:
+sass/_mixins.scss:29
+sass/spiral.scss:5
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:821:in `expected'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:796:in `expected'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:792:in `tok!'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:323:in `block'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:136:in `mixin_directive'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:129:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:129:in `special_directive'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:108:in `directive'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:339:in `block_child'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:333:in `block_contents'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:57:in `stylesheet'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/scss/parser.rb:26:in `parse'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/engine.rb:205:in `_to_tree'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/engine.rb:177:in `to_tree'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/files.rb:44:in `tree_for'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/import_node.rb:75:in `perform!'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:305:in `_perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/import_node.rb:64:in `_perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:213:in `perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/root_node.rb:37:in `perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:326:in `perform_children'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:326:in `map'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:326:in `perform_children'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:317:in `perform!'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/root_node.rb:59:in `perform!'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:305:in `_perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/node.rb:213:in `perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/root_node.rb:37:in `perform'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/tree/root_node.rb:29:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:220:in `update_stylesheet'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:85:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:78:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:78:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:76:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:76:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:171:in `watch'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:71:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/path.rb:34:in `update'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:32:in `modified'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/vendor/fssm/lib/fssm.rb:17:in `monitor'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/sass/plugin.rb:164:in `watch'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/haml/exec.rb:448:in `watch_or_update'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/haml/exec.rb:351:in `process_result'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/haml/exec.rb:41:in `parse'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/../lib/haml/exec.rb:21:in `parse!'
+/usr/local/lib/ruby/gems/1.8/gems/haml-3.0.22/bin/sass:8
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...ent(horizontal)\": expected \"}\", was \"@include box-pa...\"\A         on line 29 of sass/_mixins.scss\A         from line 5 of sass/spiral.scss\A \A 24:   @include box-pack(center);\A 25: }\A 26: \A 27: #container {\A 28:   width: $nine;\A 29:   height: $eight;\A 30:   background-color: #eee;\A 31:   @include display-box;\A 32:   @include box-pack(end);\A 33:   div {\A 34:     width: $seven;"; }

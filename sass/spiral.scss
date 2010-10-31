@@ -21,16 +21,42 @@ $nine:  (55 * $factor)+px;
 body {
   background-color: #FFF;
   @include display-box;
+  @include box-pack(center);
 }
 
 #container {
   width: $nine;
   height: $eight;
   background-color: #eee;
+  @include display-box;
+  @include box-pack(end);
   div {
     width: $seven;
     height: $eight;
     background-color: #ddd;
+    @include display-box;
+    @include box-pack(end);
+    div {
+      width: $seven;
+      height: $six;
+      background-color: #ccc;
+      @include display-box;
+      @include box-pack(start);
+      div {
+        width: $five;
+        height: $six;
+        background-color: #bbb;
+        @include display-box;
+        @include box-pack(end);
+        div {
+          width: $five;
+          height: $four;
+          background-color: #aaa;
+          @include display-box;
+          @include box-pack(end);
+        }
+      }
+    }
   }
 }
 

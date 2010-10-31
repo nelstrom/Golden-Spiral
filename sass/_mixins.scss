@@ -23,3 +23,20 @@
   -moz-box-pack: $pack;
   box-pack: $pack;
 }
+
+@mixin dock-left {
+  @include box-orient(horizontal)
+  @include box-pack(start)
+}
+@mixin dock-right {
+  @include box-orient(horizontal)
+  @include box-pack(end)
+}
+@mixin dock-top {
+  @include box-orient(vertical)
+  @include box-pack(start)
+}
+@mixin dock-bottom {
+  @include box-orient(vertical)
+  @include box-pack(end)
+}
