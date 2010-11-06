@@ -7,28 +7,28 @@ body { background-color: white; }
   background-color: rgba(0, 0, 0, 0.07);
 }
 .cycle,
-.cycle > div > div {
+.cycle>div>div {
   width:   100%;
   height:  $short_segment;
 }
-.cycle > div,
-.cycle > div > div > div{
+.cycle>div,
+.cycle>div>div>div{
   height: 100%;
   width: $short_segment;
 }
 
 .cycle                   { @include bottom-left-bevel; }
-.cycle > div             { @include bottom-right-bevel; }
-.cycle > div > div       { @include top-right-bevel; }
-.cycle > div > div > div { @include top-left-bevel; }
+.cycle>div             { @include bottom-right-bevel; }
+.cycle>div>div       { @include top-right-bevel; }
+.cycle>div>div>div { @include top-left-bevel; }
 
 .cycle                   { @include dock-right; }
-.cycle > div             { @include dock-top; }
-.cycle > div > div       { @include dock-left; }
-.cycle > div > div > div { @include dock-bottom; }
+.cycle>div             { @include dock-top; }
+.cycle>div>div       { @include dock-left; }
+.cycle>div>div>div { @include dock-bottom; }
 
 @media screen and (min-width: 1200px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(1200px);
   }
 }
@@ -37,64 +37,64 @@ body { background-color: white; }
 // https://github.com/nex3/haml/issues#issue/229
 //@for $i from 3 through 12 {
   //@media screen and (max-width: 1200px) {
-    //#container > div {
+    //#container>div {
       //@include golden_landscape(100px * $i);
     //}
   //}
 //}
 
 @media screen and (max-width: 1200px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(1100px);
   }
 }
 @media screen and (max-width: 1100px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(1000px);
   }
 }
 @media screen and (max-width: 1100px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(1000px);
   }
 }
 @media screen and (max-width: 1000px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(900px);
   }
 }
 @media screen and (max-width: 900px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(800px);
   }
 }
 @media screen and (max-width: 800px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(700px);
   }
 }
 @media screen and (max-width: 700px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(600px);
   }
 }
 @media screen and (max-width: 600px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(500px);
   }
 }
 @media screen and (max-width: 500px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(400px);
   }
 }
 @media screen and (max-width: 400px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(300px);
   }
 }
 @media screen and (max-width: 300px) {
-  #container > div {
+  #container>div {
     @include golden_landscape(200px);
   }
 }
