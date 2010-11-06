@@ -1,0 +1,25 @@
+@import "_mixins.scss";
+
+@include center-middle;
+body { background-color: white; }
+
+$golden_ratio: 1.6180339887;
+$long_segment: 1/$golden_ratio;
+$short_segment: (1 - $long_segment)*100;
+
+#container div {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+#container > div {
+  width:  550px;
+  height:   340px;
+}
+.landscape {
+  width:   100%;
+  height:  $short_segment * 1%;
+}
+.portrait {
+  height: 100%;
+  width: $short_segment * 1%;
+}
+
