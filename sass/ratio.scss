@@ -23,3 +23,12 @@ $short_segment: (1 - $long_segment)*100;
   width: $short_segment * 1%;
 }
 
+.landscape.yin  { @include bottom-left-bevel; }
+.landscape.yang { @include top-right-bevel; }
+.landscape.yin > .portrait  { @include bottom-right-bevel; }
+.landscape.yang > .portrait { @include top-left-bevel; }
+
+.landscape.yin  { @include dock-right; }
+.landscape.yang { @include dock-left; }
+.landscape.yin > .portrait  { @include dock-top; }
+.landscape.yang > .portrait { @include dock-bottom; }

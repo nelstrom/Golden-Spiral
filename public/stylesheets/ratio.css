@@ -43,3 +43,63 @@ body {
 .portrait {
   height: 100%;
   width: 38.197%; }
+
+.landscape.yin {
+  -moz-border-radius-bottomleft: 10000px;
+  border-bottom-left-radius: 10000px; }
+
+.landscape.yang {
+  -moz-border-radius-topright: 10000px;
+  border-top-right-radius: 10000px; }
+
+.landscape.yin > .portrait {
+  -moz-border-radius-bottomright: 10000px;
+  border-bottom-right-radius: 10000px; }
+
+.landscape.yang > .portrait {
+  -moz-border-radius-topleft: 10000px;
+  border-top-left-radius: 10000px; }
+
+.landscape.yin {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+
+.landscape.yang {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+
+.landscape.yin > .portrait {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+
+.landscape.yang > .portrait {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
