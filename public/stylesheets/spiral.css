@@ -4,7 +4,6 @@ html, body {
   height: 100%; }
 
 body {
-  background-color: #FFF;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -24,6 +23,9 @@ body {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     box-orient: horizontal; }
+
+body {
+  background-color: white; }
 
 .west {
   -moz-border-radius-topleft: 10000px;

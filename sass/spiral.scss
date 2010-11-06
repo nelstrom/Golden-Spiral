@@ -23,22 +23,9 @@ $seven: (21 * $factor)+px;
 $eight: (34 * $factor)+px;
 $nine:  (55 * $factor)+px;
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-body {
-  background-color: #FFF;
-  @include display-box;
-  @include box-pack(center);
-  @include box-orient(vertical);
-  #container {
-    @include display-box;
-    @include box-pack(center);
-    @include box-orient(horizontal);
-  }
-}
+@include center-middle;
+body { background-color: white; }
+
 .west { @include top-left-bevel; }
 .east { @include bottom-right-bevel; }
 .north { @include top-right-bevel; }
