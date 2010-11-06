@@ -3,26 +3,21 @@
 @include center-middle;
 body { background-color: white; }
 
-$golden_ratio: 1.6180339887;
-$long_segment: 1/$golden_ratio;
-$short_segment: (1 - $long_segment)*100;
-
 #container div {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.07);
 }
 #container > div {
-  width:  550px;
-  height:   340px;
+  @include golden_landscape(950px);
 }
 .cycle,
 .cycle > div > div {
   width:   100%;
-  height:  $short_segment * 1%;
+  height:  $short_segment;
 }
 .cycle > div,
 .cycle > div > div > div{
   height: 100%;
-  width: $short_segment * 1%;
+  width: $short_segment;
 }
 
 .cycle                   { @include bottom-left-bevel; }

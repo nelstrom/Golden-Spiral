@@ -1,3 +1,11 @@
+$golden_ratio: 1.6180339887;
+$long_segment: 1/$golden_ratio;
+$short_segment: (1 - $long_segment)*100%;
+
+@mixin golden_landscape($width) {
+  width: $width;
+  height: $width * $long_segment;
+}
 @mixin display-box {
   display: -webkit-box;
   display: -moz-box;
