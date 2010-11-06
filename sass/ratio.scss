@@ -6,9 +6,6 @@ body { background-color: white; }
 #container div {
   background-color: rgba(0, 0, 0, 0.07);
 }
-#container > div {
-  @include golden_landscape(950px);
-}
 .cycle,
 .cycle > div > div {
   width:   100%;
@@ -29,3 +26,64 @@ body { background-color: white; }
 .cycle > div             { @include dock-top; }
 .cycle > div > div       { @include dock-left; }
 .cycle > div > div > div { @include dock-bottom; }
+
+@media screen and (min-width: 1200px) {
+  #container > div {
+    @include golden_landscape(1200px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  #container > div {
+    @include golden_landscape(1100px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  #container > div {
+    @include golden_landscape(1000px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  #container > div {
+    @include golden_landscape(1000px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  #container > div {
+    @include golden_landscape(900px);
+  }
+}
+@media screen and (max-width: 900px) {
+  #container > div {
+    @include golden_landscape(800px);
+  }
+}
+@media screen and (max-width: 800px) {
+  #container > div {
+    @include golden_landscape(700px);
+  }
+}
+@media screen and (max-width: 700px) {
+  #container > div {
+    @include golden_landscape(600px);
+  }
+}
+@media screen and (max-width: 600px) {
+  #container > div {
+    @include golden_landscape(500px);
+  }
+}
+@media screen and (max-width: 500px) {
+  #container > div {
+    @include golden_landscape(400px);
+  }
+}
+@media screen and (max-width: 400px) {
+  #container > div {
+    @include golden_landscape(300px);
+  }
+}
+@media screen and (max-width: 300px) {
+  #container > div {
+    @include golden_landscape(200px);
+  }
+}

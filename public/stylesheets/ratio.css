@@ -32,10 +32,6 @@ body {
 #container div {
   background-color: rgba(0, 0, 0, 0.07); }
 
-#container > div {
-  width: 950px;
-  height: 587.132px; }
-
 .cycle,
 .cycle > div > div {
   width: 100%;
@@ -105,3 +101,63 @@ body {
   -webkit-box-pack: end;
   -moz-box-pack: end;
   box-pack: end; }
+
+@media screen and (min-width: 1200px) {
+  #container > div {
+    width: 1200px;
+    height: 741.641px; } }
+
+@media screen and (max-width: 1200px) {
+  #container > div {
+    width: 1100px;
+    height: 679.837px; } }
+
+@media screen and (max-width: 1100px) {
+  #container > div {
+    width: 1000px;
+    height: 618.034px; } }
+
+@media screen and (max-width: 1100px) {
+  #container > div {
+    width: 1000px;
+    height: 618.034px; } }
+
+@media screen and (max-width: 1000px) {
+  #container > div {
+    width: 900px;
+    height: 556.231px; } }
+
+@media screen and (max-width: 900px) {
+  #container > div {
+    width: 800px;
+    height: 494.427px; } }
+
+@media screen and (max-width: 800px) {
+  #container > div {
+    width: 700px;
+    height: 432.624px; } }
+
+@media screen and (max-width: 700px) {
+  #container > div {
+    width: 600px;
+    height: 370.82px; } }
+
+@media screen and (max-width: 600px) {
+  #container > div {
+    width: 500px;
+    height: 309.017px; } }
+
+@media screen and (max-width: 500px) {
+  #container > div {
+    width: 400px;
+    height: 247.214px; } }
+
+@media screen and (max-width: 400px) {
+  #container > div {
+    width: 300px;
+    height: 185.41px; } }
+
+@media screen and (max-width: 300px) {
+  #container > div {
+    width: 200px;
+    height: 123.607px; } }
