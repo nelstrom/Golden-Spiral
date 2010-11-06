@@ -14,21 +14,23 @@ $short_segment: (1 - $long_segment)*100;
   width:  550px;
   height:   340px;
 }
-.landscape {
+.cycle,
+.cycle > div > div {
   width:   100%;
   height:  $short_segment * 1%;
 }
-.portrait {
+.cycle > div,
+.cycle > div > div > div{
   height: 100%;
   width: $short_segment * 1%;
 }
 
-.landscape.yin  { @include bottom-left-bevel; }
-.landscape.yang { @include top-right-bevel; }
-.landscape.yin > .portrait  { @include bottom-right-bevel; }
-.landscape.yang > .portrait { @include top-left-bevel; }
+.cycle                   { @include bottom-left-bevel; }
+.cycle > div             { @include bottom-right-bevel; }
+.cycle > div > div       { @include top-right-bevel; }
+.cycle > div > div > div { @include top-left-bevel; }
 
-.landscape.yin  { @include dock-right; }
-.landscape.yang { @include dock-left; }
-.landscape.yin > .portrait  { @include dock-top; }
-.landscape.yang > .portrait { @include dock-bottom; }
+.cycle                   { @include dock-right; }
+.cycle > div             { @include dock-top; }
+.cycle > div > div       { @include dock-left; }
+.cycle > div > div > div { @include dock-bottom; }

@@ -36,31 +36,33 @@ body {
   width: 550px;
   height: 340px; }
 
-.landscape {
+.cycle,
+.cycle > div > div {
   width: 100%;
   height: 38.197%; }
 
-.portrait {
+.cycle > div,
+.cycle > div > div > div {
   height: 100%;
   width: 38.197%; }
 
-.landscape.yin {
+.cycle {
   -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px; }
 
-.landscape.yang {
-  -moz-border-radius-topright: 10000px;
-  border-top-right-radius: 10000px; }
-
-.landscape.yin > .portrait {
+.cycle > div {
   -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px; }
 
-.landscape.yang > .portrait {
+.cycle > div > div {
+  -moz-border-radius-topright: 10000px;
+  border-top-right-radius: 10000px; }
+
+.cycle > div > div > div {
   -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px; }
 
-.landscape.yin {
+.cycle {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -71,18 +73,7 @@ body {
   -moz-box-pack: end;
   box-pack: end; }
 
-.landscape.yang {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start; }
-
-.landscape.yin > .portrait {
+.cycle > div {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -93,7 +84,18 @@ body {
   -moz-box-pack: start;
   box-pack: start; }
 
-.landscape.yang > .portrait {
+.cycle > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+
+.cycle > div > div > div {
   display: -webkit-box;
   display: -moz-box;
   display: box;
