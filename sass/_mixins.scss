@@ -60,20 +60,24 @@
   -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px;
 }
+@mixin max-height {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 @mixin center-middle {
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  body {
-    @include display-box;
-    @include box-pack(center);
-    @include box-orient(vertical);
-    #container {
+  html {
+    @include max-height;
+    body {
+      @include max-height;
       @include display-box;
       @include box-pack(center);
-      @include box-orient(horizontal);
+      @include box-orient(vertical);
+      #container {
+        @include display-box;
+        @include box-pack(center);
+        @include box-orient(horizontal);
+      }
     }
   }
 }
