@@ -32,6 +32,17 @@ body { background-color: white; }
     @include golden_landscape(1200px);
   }
 }
+
+// Sass 3.0.23 does not allow interpolation inside media queries.
+// https://github.com/nex3/haml/issues#issue/229
+//@for $i from 3 through 12 {
+  //@media screen and (max-width: 1200px) {
+    //#container > div {
+      //@include golden_landscape(100px * $i);
+    //}
+  //}
+//}
+
 @media screen and (max-width: 1200px) {
   #container > div {
     @include golden_landscape(1100px);
