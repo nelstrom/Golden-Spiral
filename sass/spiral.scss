@@ -12,7 +12,7 @@ $grey: #eeeeee;
 $base-color: $grey;
 $gradient-increment: 6%;
 
-$factor: 20;
+$factor: 18;
 $one:   (1 * $factor)+px;
 $two:   (2 * $factor)+px;
 $three: (3 * $factor)+px;
@@ -23,64 +23,72 @@ $seven: (21 * $factor)+px;
 $eight: (34 * $factor)+px;
 $nine:  (55 * $factor)+px;
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 body {
   background-color: #FFF;
   @include display-box;
   @include box-pack(center);
+  @include box-orient(vertical);
+  #container {
+    @include display-box;
+    @include box-pack(center);
+    @include box-orient(horizontal);
+  }
 }
 .west { @include top-left-bevel; }
 .east { @include bottom-right-bevel; }
-.south { @include top-right-bevel; }
-.north { @include bottom-left-bevel; }
+.north { @include top-right-bevel; }
+.south { @include bottom-left-bevel; }
 
-#container div {
-  background-color: $base-color;
-}
 #container {
-  width: $nine;
-  height: $eight;
-  @include dock-right;
-  background-color: $base-color;
   div {
-    width: $seven;
+    width: $nine;
     height: $eight;
-    background-color: darken($base-color, (1*$gradient-increment));
-    @include dock-top;
+    @include dock-right;
+    background-color: $base-color;
     div {
       width: $seven;
-      height: $six;
-      background-color: darken($base-color, (2*$gradient-increment));
-      @include dock-left;
+      height: $eight;
+      background-color: darken($base-color, (1*$gradient-increment));
+      @include dock-top;
       div {
-        width: $five;
+        width: $seven;
         height: $six;
-        background-color: darken($base-color, (3*$gradient-increment));
-        @include dock-bottom;
+        background-color: darken($base-color, (2*$gradient-increment));
+        @include dock-left;
         div {
           width: $five;
-          height: $four;
-          background-color: darken($base-color, (4*$gradient-increment));
-          @include dock-right;
+          height: $six;
+          background-color: darken($base-color, (3*$gradient-increment));
+          @include dock-bottom;
           div {
-            width: $three;
+            width: $five;
             height: $four;
-            background-color: darken($base-color, (5*$gradient-increment));
-            @include dock-top;
+            background-color: darken($base-color, (4*$gradient-increment));
+            @include dock-right;
             div {
               width: $three;
-              height: $two;
-              background-color: darken($base-color, (6*$gradient-increment));
-              @include dock-left;
+              height: $four;
+              background-color: darken($base-color, (5*$gradient-increment));
+              @include dock-top;
               div {
-                width: $one;
+                width: $three;
                 height: $two;
-                background-color: darken($base-color, (7*$gradient-increment));
-                @include dock-bottom;
+                background-color: darken($base-color, (6*$gradient-increment));
+                @include dock-left;
                 div {
                   width: $one;
-                  height: $one;
-                  background-color: darken($base-color, (8*$gradient-increment));
-                }
+                  height: $two;
+                  background-color: darken($base-color, (7*$gradient-increment));
+                  @include dock-bottom;
+                  div {
+                    width: $one;
+                    height: $one;
+                    background-color: darken($base-color, (8*$gradient-increment));
               }
             }
           }
@@ -88,4 +96,6 @@ body {
       }
     }
   }
+}
+}
 }
