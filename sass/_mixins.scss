@@ -1,7 +1,17 @@
 $golden_ratio: 1.6180339887;
 $long_segment: 1/$golden_ratio;
-$f: 1/$golden_ratio;
 $short_segment: (1 - $long_segment)*100%;
+
+$f1:  1/$golden_ratio;
+$f2:  $f1*$f1;
+$f3:  $f1*$f2;
+$f4:  $f1*$f3;
+$f5:  $f1*$f4;
+$f6:  $f1*$f5;
+$f7:  $f1*$f6;
+$f8:  $f1*$f7;
+$f9:  $f1*$f8;
+$f10: $f1*$f9;
 
 @mixin golden_landscape($length) {
   width: $length;
@@ -97,13 +107,14 @@ $short_segment: (1 - $long_segment)*100%;
 }
 
 @mixin golden_spiral_landscape($length) {
-  .cycle                                           { @include golden_landscape($length); }
-  .cycle > div                                     { @include golden_portrait ($length * $f); }
-  .cycle > div > div                               { @include golden_landscape($length * $f * $f); }
-  .cycle > div > div > div                         { @include golden_portrait ($length * $f * $f * $f); }
-  .cycle > div > div > div > div                   { @include golden_landscape($length * $f * $f * $f * $f); }
-  .cycle > div > div > div > div > div             { @include golden_portrait ($length * $f * $f * $f * $f * $f); }
-  .cycle > div > div > div > div > div > div       { @include golden_landscape($length * $f * $f * $f * $f * $f * $f); }
-  .cycle > div > div > div > div > div > div > div { @include golden_portrait ($length * $f * $f * $f * $f * $f * $f * $f); }
+  .cycle                                                 { @include golden_landscape($length); }
+  .cycle > div                                           { @include golden_portrait ($length * $f1); }
+  .cycle > div > div                                     { @include golden_landscape($length * $f2); }
+  .cycle > div > div > div                               { @include golden_portrait ($length * $f3); }
+  .cycle > div > div > div > div                         { @include golden_landscape($length * $f4); }
+  .cycle > div > div > div > div > div                   { @include golden_portrait ($length * $f5); }
+  .cycle > div > div > div > div > div > div             { @include golden_landscape($length * $f6); }
+  .cycle > div > div > div > div > div > div > div       { @include golden_portrait ($length * $f7); }
+  .cycle > div > div > div > div > div > div > div > div { @include golden_portrait ($length * $f8); }
 }
 
