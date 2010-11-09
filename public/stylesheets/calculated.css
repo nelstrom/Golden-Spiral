@@ -1,0 +1,127 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+  html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical; }
+    html body #container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      box-orient: horizontal; }
+
+body {
+  background-color: white; }
+
+#container div {
+  background-color: rgba(0, 0, 0, 0.07); }
+
+.cycle {
+  -moz-border-radius-bottomleft: 10000px;
+  border-bottom-left-radius: 10000px; }
+
+.cycle > div {
+  -moz-border-radius-bottomright: 10000px;
+  border-bottom-right-radius: 10000px; }
+
+.cycle > div > div {
+  -moz-border-radius-topright: 10000px;
+  border-top-right-radius: 10000px; }
+
+.cycle > div > div > div {
+  -moz-border-radius-topleft: 10000px;
+  border-top-left-radius: 10000px; }
+
+.cycle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+
+.cycle > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+
+.cycle > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+
+.cycle > div > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+
+.cycle {
+  width: 800px;
+  height: 494.427px; }
+
+.cycle > div {
+  width: 305.573px;
+  height: 494.427px; }
+
+.cycle > div > div {
+  width: 305.573px;
+  height: 188.854px; }
+
+.cycle > div > div > div {
+  width: 116.718px;
+  height: 188.854px; }
+
+.cycle > div > div > div > div {
+  width: 116.718px;
+  height: 72.136px; }
+
+.cycle > div > div > div > div > div {
+  width: 44.582px;
+  height: 72.136px; }
+
+.cycle > div > div > div > div > div > div {
+  width: 44.582px;
+  height: 27.553px; }
+
+.cycle > div > div > div > div > div > div > div {
+  width: 17.029px;
+  height: 27.553px; }

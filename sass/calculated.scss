@@ -1,0 +1,20 @@
+@import "_mixins.scss";
+
+@include center-middle;
+body { background-color: white; }
+
+#container div {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.cycle                   { @include bottom-left-bevel; }
+.cycle > div             { @include bottom-right-bevel; }
+.cycle > div > div       { @include top-right-bevel; }
+.cycle > div > div > div { @include top-left-bevel; }
+
+.cycle                   { @include dock-right; }
+.cycle > div             { @include dock-top; }
+.cycle > div > div       { @include dock-left; }
+.cycle > div > div > div { @include dock-bottom; }
+
+@include golden_spiral_landscape(800px)

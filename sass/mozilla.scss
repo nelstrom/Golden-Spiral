@@ -1,0 +1,29 @@
+@import "_mixins.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  @include display-box;
+  @include box-pack(center);
+  @include box-orient(vertical);
+  .container {
+    @include display-box;
+    @include box-pack(center);
+    @include box-orient(horizontal);
+    div {
+      background-color: #DDD;
+      width: 300px;
+      height: 300px;
+      div {
+        background-color: #aaa;
+        width:  50%;
+        height: 50%;
+      }
+    }
+  }
+}
+
