@@ -34,98 +34,226 @@ body {
 #container div {
   background-color: rgba(0, 0, 0, 0.07); }
 
-.cycle {
-  -moz-border-radius-bottomleft: 10000px;
-  border-bottom-left-radius: 10000px; }
-
-.cycle > div {
-  -moz-border-radius-bottomright: 10000px;
-  border-bottom-right-radius: 10000px; }
-
-.cycle > div > div {
-  -moz-border-radius-topright: 10000px;
-  border-top-right-radius: 10000px; }
-
-.cycle > div > div > div {
-  -moz-border-radius-topleft: 10000px;
-  border-top-left-radius: 10000px; }
-
-.cycle {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end; }
-
-.cycle > div {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start; }
-
-.cycle > div > div {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start; }
-
-.cycle > div > div > div {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end; }
-
-.cycle {
+body .cycle, body.landscape .cycle {
   width: 800px;
   height: 494.427px; }
-
-.cycle > div {
+body .cycle > div, body.landscape .cycle > div {
   width: 305.573px;
   height: 494.427px; }
-
-.cycle > div > div {
+body .cycle > div > div, body.landscape .cycle > div > div {
   width: 305.573px;
   height: 188.854px; }
-
-.cycle > div > div > div {
+body .cycle > div > div > div, body.landscape .cycle > div > div > div {
   width: 116.718px;
   height: 188.854px; }
-
-.cycle > div > div > div > div {
+body .cycle > div > div > div > div, body.landscape .cycle > div > div > div > div {
   width: 116.718px;
   height: 72.136px; }
-
-.cycle > div > div > div > div > div {
+body .cycle > div > div > div > div > div, body.landscape .cycle > div > div > div > div > div {
   width: 44.582px;
   height: 72.136px; }
-
-.cycle > div > div > div > div > div > div {
+body .cycle > div > div > div > div > div > div, body.landscape .cycle > div > div > div > div > div > div {
   width: 44.582px;
   height: 27.553px; }
-
-.cycle > div > div > div > div > div > div > div {
+body .cycle > div > div > div > div > div > div > div, body.landscape .cycle > div > div > div > div > div > div > div {
   width: 17.029px;
   height: 27.553px; }
-
-.cycle > div > div > div > div > div > div > div > div {
+body .cycle > div > div > div > div > div > div > div > div, body.landscape .cycle > div > div > div > div > div > div > div > div {
   width: 17.029px;
   height: 10.524px; }
+body .cycle, body.landscape .cycle {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomleft: 10000px;
+  border-bottom-left-radius: 10000px; }
+body .cycle > div, body.landscape .cycle > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 10000px;
+  border-bottom-right-radius: 10000px; }
+body .cycle > div > div, body.landscape .cycle > div > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 10000px;
+  border-top-right-radius: 10000px; }
+body .cycle > div > div > div, body.landscape .cycle > div > div > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topleft: 10000px;
+  border-top-left-radius: 10000px; }
+body .cycle, body.landscape .cycle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+body .cycle > div, body.landscape .cycle > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+body .cycle > div > div, body.landscape .cycle > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+body .cycle > div > div > div, body.landscape .cycle > div > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+
+body.portrait .cycle {
+  width: 370.82px;
+  height: 600px; }
+body.portrait .cycle > div {
+  width: 370.82px;
+  height: 229.18px; }
+body.portrait .cycle > div > div {
+  width: 141.641px;
+  height: 229.18px; }
+body.portrait .cycle > div > div > div {
+  width: 141.641px;
+  height: 87.539px; }
+body.portrait .cycle > div > div > div > div {
+  width: 54.102px;
+  height: 87.539px; }
+body.portrait .cycle > div > div > div > div > div {
+  width: 54.102px;
+  height: 33.437px; }
+body.portrait .cycle > div > div > div > div > div > div {
+  width: 20.665px;
+  height: 33.437px; }
+body.portrait .cycle > div > div > div > div > div > div > div {
+  width: 20.665px;
+  height: 12.772px; }
+body.portrait .cycle > div > div > div > div > div > div > div > div {
+  width: 7.893px;
+  height: 12.772px; }
+body.portrait .cycle {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topleft: 10000px;
+  border-top-left-radius: 10000px; }
+body.portrait .cycle > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomleft: 10000px;
+  border-bottom-left-radius: 10000px; }
+body.portrait .cycle > div > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 10000px;
+  border-bottom-right-radius: 10000px; }
+body.portrait .cycle > div > div > div {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 10000px;
+  border-top-right-radius: 10000px; }
+body.portrait .cycle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+body.portrait .cycle > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end; }
+body.portrait .cycle > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }
+body.portrait .cycle > div > div > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start; }

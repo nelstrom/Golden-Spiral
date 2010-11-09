@@ -7,14 +7,29 @@ body { background-color: white; }
   background-color: rgba(0, 0, 0, 0.07);
 }
 
-.cycle                   { @include bottom-left-bevel; }
-.cycle > div             { @include bottom-right-bevel; }
-.cycle > div > div       { @include top-right-bevel; }
-.cycle > div > div > div { @include top-left-bevel; }
+body, body.landscape {
+  @include golden_spiral_landscape(800px);
+  .cycle                   { @include bottom-left-bevel; }
+  .cycle > div             { @include bottom-right-bevel; }
+  .cycle > div > div       { @include top-right-bevel; }
+  .cycle > div > div > div { @include top-left-bevel; }
 
-.cycle                   { @include dock-right; }
-.cycle > div             { @include dock-top; }
-.cycle > div > div       { @include dock-left; }
-.cycle > div > div > div { @include dock-bottom; }
+  .cycle                   { @include dock-right; }
+  .cycle > div             { @include dock-top; }
+  .cycle > div > div       { @include dock-left; }
+  .cycle > div > div > div { @include dock-bottom; }
+}
 
-@include golden_spiral_landscape(800px)
+body.portrait {
+  @include golden_spiral_portrait(600px);
+  .cycle                   { @include top-left-bevel; }
+  .cycle > div             { @include bottom-left-bevel; }
+  .cycle > div > div       { @include bottom-right-bevel; }
+  .cycle > div > div > div { @include top-right-bevel; }
+
+  .cycle                   { @include dock-bottom; }
+  .cycle > div             { @include dock-right; }
+  .cycle > div > div       { @include dock-top; }
+  .cycle > div > div > div { @include dock-left; }
+
+}

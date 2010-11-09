@@ -67,19 +67,33 @@ $f10: $f1*$f9;
   @include box-orient(vertical);
   @include box-pack(end);
 }
+@mixin hard-corners {
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
 @mixin top-left-bevel {
+  @include hard-corners;
   -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px;
 }
 @mixin top-right-bevel {
+  @include hard-corners;
   -moz-border-radius-topright: 10000px;
   border-top-right-radius: 10000px;
 }
 @mixin bottom-left-bevel {
+  @include hard-corners;
   -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px;
 }
 @mixin bottom-right-bevel {
+  @include hard-corners;
   -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px;
 }
