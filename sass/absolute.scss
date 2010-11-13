@@ -1,0 +1,33 @@
+@import "_mixins.scss";
+
+body { background-color: white; }
+
+#container div {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+#container > div.cycle {
+  @include golden_landscape(800px);
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.cycle,
+.cycle > div > div {
+  width:   100%;
+  height:  $short_segment;
+}
+.cycle > div,
+.cycle > div > div > div{
+  height: 100%;
+  width: $short_segment;
+}
+.cycle                   { @include bottom-left-bevel; }
+.cycle > div             { @include bottom-right-bevel; }
+.cycle > div > div       { @include top-right-bevel; }
+.cycle > div > div > div { @include top-left-bevel; }
+
+.cycle                   { @include  absolute_bottom; }
+.cycle > div             { @include  absolute_right; }
+.cycle > div > div       { @include  absolute_top;   }
+.cycle > div > div > div { @include  absolute_left;  }

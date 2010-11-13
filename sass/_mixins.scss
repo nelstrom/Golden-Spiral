@@ -144,3 +144,19 @@ $f10: $f1*$f9;
   .cycle > div > div > div > div > div > div > div > div { @include golden_portrait  ($length * $f8); }
 }
 
+@mixin absolute_bottom {
+  position: absolute;
+  bottom: 0;
+}
+@mixin absolute_top {
+  position: absolute;
+  top: 0;
+}
+@mixin absolute_left {
+  position: absolute;
+  left: 0;
+}
+@mixin absolute_right {
+  position: absolute;
+  right: 0;
+}
