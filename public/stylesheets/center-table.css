@@ -1,18 +1,14 @@
-html, body {
+html {
+  display: table;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%; }
-
-html body {
-  display: table; }
-
-html body div {
-  display: table-cell;
-  vertical-align: middle; }
-  html body div div {
-    width: 300px;
-    height: 300px;
-    vertical-align: top;
-    border: 1px solid black;
-    padding: 10px; }
+  html body {
+    display: table-cell;
+    vertical-align: middle; }
+    html body div {
+      width: 33%;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 10px; }

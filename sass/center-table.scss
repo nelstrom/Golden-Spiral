@@ -1,23 +1,17 @@
 @import "_mixins.scss";
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-html body {
+html {
   display:table;
-}
-html body div {
-  display:table-cell;
-  vertical-align: middle;
-  div {
-    width:  300px;
-    height: 300px;
-    vertical-align: top;
-    border: 1px solid black;
-    padding: 10px;
+  @include max-height;
+  body {
+    display:table-cell;
+    vertical-align: middle;
+    div {
+      width:  33%;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 10px;
+    }
   }
 }
 
