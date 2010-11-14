@@ -25,6 +25,9 @@ body {
     -moz-box-orient: horizontal;
     box-orient: horizontal; }
     body .container div {
-      background-color: #DDD;
+      border: 1px solid black;
+      padding: 10px;
       width: 300px;
-      height: 300px; }
+      height: 300px;
+      vertical-align: middle;
+      display: table-cell; }

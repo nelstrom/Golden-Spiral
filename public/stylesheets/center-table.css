@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+html body {
+  display: table-cell;
+  vertical-align: middle; }
+
+html body div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  background-color: #ccc; }
