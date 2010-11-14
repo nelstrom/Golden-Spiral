@@ -62,47 +62,31 @@ body .cycle > div > div > div > div > div > div > div > div, body.landscape .cyc
   width: 17.029px;
   height: 10.524px; }
 body .cycle, body.landscape .cycle {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-bottom-left-radius: 10000px;
   -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px; }
 body .cycle > div, body.landscape .cycle > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-bottom-right-radius: 10000px;
   -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px; }
 body .cycle > div > div, body.landscape .cycle > div > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-top-right-radius: 10000px;
   -moz-border-radius-topright: 10000px;
   border-top-right-radius: 10000px; }
 body .cycle > div > div > div, body.landscape .cycle > div > div > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-top-left-radius: 10000px;
   -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px; }
 body .cycle, body.landscape .cycle {
@@ -174,47 +158,31 @@ body.portrait .cycle > div > div > div > div > div > div > div > div {
   width: 7.893px;
   height: 12.772px; }
 body.portrait .cycle {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-top-left-radius: 10000px;
   -moz-border-radius-topleft: 10000px;
   border-top-left-radius: 10000px; }
 body.portrait .cycle > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-bottom-left-radius: 10000px;
   -moz-border-radius-bottomleft: 10000px;
   border-bottom-left-radius: 10000px; }
 body.portrait .cycle > div > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-bottom-right-radius: 10000px;
   -moz-border-radius-bottomright: 10000px;
   border-bottom-right-radius: 10000px; }
 body.portrait .cycle > div > div > div {
-  -moz-border-radius-topleft: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  border-top-right-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-top-right-radius: 10000px;
   -moz-border-radius-topright: 10000px;
   border-top-right-radius: 10000px; }
 body.portrait .cycle {
