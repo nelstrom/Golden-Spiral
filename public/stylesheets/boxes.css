@@ -16,12 +16,12 @@ body {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical; }
@@ -31,12 +31,6 @@ body {
     display: -moz-box;
     display: box; }
   .container .child-one {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
     background-color: #cc3333; }
   .container .child-two {
-    -webkit-box-flex: 2;
-    -moz-box-flex: 2;
-    box-flex: 2;
     background-color: #3333cc; }
