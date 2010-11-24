@@ -1,0 +1,25 @@
+html, body {
+  height: 100%; width: 100%;
+  margin: 0; padding: 0;
+}
+
+#container > div {
+  margin: 0 auto;
+  width: 485.4px;
+  height: 300px;
+}
+
+.cycle,
+.cycle > div > div {
+  height: 38.2%;
+  width: 100%;
+}
+.cycle > div,
+.cycle > div > div > div {
+  width: 38.2%;
+  height: 100%;
+}
+
+#container div {
+  background-color: rgba(0,0,0,0.07)
+}
