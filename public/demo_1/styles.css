@@ -4,10 +4,10 @@ html, body {
 }
 
 #container > div {
-  margin: 0 auto;
   width: 485.4px;
   height: 300px;
 }
+
 .cycle,
 .cycle > div > div {
   height: 38.2%;
