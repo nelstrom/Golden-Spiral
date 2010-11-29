@@ -2,22 +2,23 @@ $(document).ready(function() {
 	var phi = (1 + Math.sqrt(5))/2;
 
 	$(window).resize(function() {
-		var width = $(this).width(),
-				height = $(this).height(),
-				phi = (1 + Math.sqrt(5))/2;
+		var goldenWidth, goldenHeight,
+			windowWidth  = $(this).width(),
+			windowHeight = $(this).height();
 
-		if (width/height > phi) {
-			// letterbox - use full available height
-			var calculated_width = height * phi;
-			$("#container > div.cycle")
-				.height(height)
-				.width(calculated_width);
+		if (windowWidth/windowHeight > phi) {
+			// panoramic - use full height
+			goldenWidth  = windowHeight * phi;
+			goldenHeight = windowHeight;
 		} else {
-			// panoramic portrait - use full available width
-			var calculated_height = width / phi;
-			$("#container > div.cycle")
-				.width(width)
-				.height(calculated_height);
+			// portrait  - use full width
+			goldenWidth  = windowWidth;
+			goldenHeight = windowWidth / phi;
 		};
+
+		$("#container > div.cycle")
+			.width(goldenWidth)
+			.height(goldenHeight);
 	}).resize();
+
 });
