@@ -1,3 +1,5 @@
+Requires [SASS][] for compiling CSS.
+
 Do not edit stylesheets in public/stylesheets/ directly. They are compiled from
 SCSS to CSS, so all changes should be made instead to SCSS source files.
 
@@ -7,3 +9,5 @@ To compile, run:
 
 This will watch for any changes to files in the sass/ directory, automatically
 recompiling to CSS and outputing to the public/stylesheets directory.
+
+[SASS]: http://sass-lang.com/
